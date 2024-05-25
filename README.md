@@ -18,10 +18,22 @@ pip install scikit-learn
 pip install plotly
 ```
 
+```bash
+pip install pandas
+```
+
+```bash
+pip install numpy
+```
+
 ## ¿Cómo ejecutar?
 
-Para probar las distintas funciones del programa puede ejecutar el archivo main.py con el siguiente comando:
+Para probar las distintas funciones del programa puede ejecutar el archivo main.py con alguno de los siguientes comandos:
 
 ```bash
 python main.py
+```
+
+```bash
+py main.py
 ```
