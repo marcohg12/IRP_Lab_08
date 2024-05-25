@@ -5,3 +5,5 @@
 Para utilizar el programa debe instalar las siguientes dependencias:
 
 pip install scikit-learn
+
+pip install plotly

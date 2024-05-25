@@ -19,10 +19,6 @@ from constants import TRAINING_OBJS_DIR
 # Retorna el dataset reducido utilizado para el entrenamiento
 def train_dataset(X_train, Y_train):
     
-    # Separamos las características de la variable que se desea predecir
-    #X = pd.DataFrame(dataset.data, columns = dataset.feature_names)
-    #y = pd.Series(dataset.target, name = target_name)
-    
     # Codificamos las variables cualitativas
     ordinal_encoder = OrdinalEncoder(handle_unknown = 'use_encoded_value', unknown_value = np.nan)
     X_encoded = ordinal_encoder.fit_transform(X_train)
