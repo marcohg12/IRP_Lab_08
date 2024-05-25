@@ -2,8 +2,12 @@
 
 ## Dependencias
 
-Para utilizar el programa debe instalar las siguientes dependencias:
+Para utilizar el programa debe instalar las siguientes dependencias utilizando el paquete [pip](https://pip.pypa.io/en/stable/):
 
+```bash
 pip install scikit-learn
+```
 
+```bash
 pip install plotly
+```
