@@ -25,7 +25,7 @@ def main():
     # Entrenamos el modelo y obtenemos el dataset reducido usado para el entrenamiento
     X_pca = train_dataset(X_train, y_train)
 
-    #plot_scatter(X_pca, y, 'PC1', 'PC2', 'income', 'Reduced Dataset Using PCA')
+    plot_scatter(X_pca, y, 'PC1', 'PC2', 'income', 'Reduced Dataset Using PCA')
 
     plot_biplot(X_train, y_train, X.columns, 'income', 'PC1', 'PC2', 'Loadings for PCA per Feature')
 
