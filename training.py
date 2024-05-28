@@ -57,6 +57,8 @@ def train_dataset(X_train, Y_train, n_components):
 # Prueba el proceso de entrenamiento y clasificación sin PCA
 def test_process_with_no_pca(X_train, Y_train, X_test, Y_test):
 
+    start_time = time.time()
+
     # Codificamos las variables cualitativas
     ordinal_encoder = OrdinalEncoder(handle_unknown = 'use_encoded_value', unknown_value = np.nan)
     X_encoded = ordinal_encoder.fit_transform(X_train)
@@ -82,3 +84,4 @@ def test_process_with_no_pca(X_train, Y_train, X_test, Y_test):
     accuracy = accuracy_score(Y_test, Y_pred)
 
     print("Tasa de aciertos sin PCA: ", accuracy)
+    print(f"Tiempo de ejecución sin PCA: ", time.time() - start_time)
